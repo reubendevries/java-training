@@ -15,12 +15,18 @@ public class FloatAndDouble {
         System.out.printf("Double minimum value: %f%n", myMinDoubleValue);
         System.out.printf("Double maximum value: %f%n", myMaxDoubleValue);
         
-        int myIntValue = 5;
-        float myFloatValue = (float) 5.25;
-        double myDoubleValue = 5.25d;
+        // 
+        int myIntValue = 5 / 3;
+        float myFloatValue = 5f / 3f;
+        double myDoubleValue = 5d / 3d;
 
         System.out.printf("My Int Value: %d%n", myIntValue);
         System.out.printf("My Float Value: %f%n", myFloatValue);
         System.out.printf("My Double Value: %f%n", myDoubleValue);
+        
+        // a kilo calculator
+        double numberOfPounds = 200d;
+        double myTotalKilos = numberOfPounds * 0.45359237;
+        System.out.printf("%f Lbs turns into %f Kilos%n", numberOfPounds, myTotalKilos);
     }
 }
